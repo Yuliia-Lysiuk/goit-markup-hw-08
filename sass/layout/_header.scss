@@ -1,5 +1,5 @@
 .header {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid $border-color;
 }
 .header-conteiner {
   display: flex;
@@ -19,21 +19,21 @@
   font-size: 24px;
   line-height: 1.17;
 
-  color: var(--third-text-color);
+  color: $third-text-color;
   text-decoration: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $second-bp) {
     display: flex;
     align-items: center;
     margin-right: 88px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $third-bp) {
     font-size: 26px;
     line-height: 1.2;
     margin-right: 93px;
   }
 }
 .logo__accent {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 /* Навігація */
@@ -47,7 +47,7 @@
 .nav,
 .menu-connect {
   display: flex;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $third-bp) {
     align-items: center;
   }
 }
@@ -55,7 +55,7 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $second-bp) and (max-width: 1199px) {
     flex-direction: column;
   }
 }
@@ -67,7 +67,7 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }
 
 .main-nav__item {
@@ -78,7 +78,7 @@
   }
 }
 .accent {
-  color: var(--accent-color);
+  color: $accent-color;
 
   &::after {
     content: "";
@@ -86,16 +86,16 @@
     position: absolute;
     height: 4px;
     width: 100%;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     bottom: -1px;
     border-radius: 2px;
   }
 }
 .menu-connect__list:not(:last-child) {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $second-bp) and (max-width: 1199px) {
     margin-bottom: 10px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $third-bp) {
     margin-right: 50px;
   }
 }
@@ -104,7 +104,7 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
+  color: $main-text-color;
   align-items: center;
 }
 
@@ -112,10 +112,10 @@
   display: inline-block;
   align-self: center;
   margin-right: 10px;
-  fill: var(--main-text-color);
+  fill: $main-text-color;
 
   .menu-connect__link:hover &,
   .menu-connect__link:focus & {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
 }

@@ -11,7 +11,7 @@
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 100;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: $third-bp) {
     padding: 93px 15px;
     overflow-y: scroll;
   }

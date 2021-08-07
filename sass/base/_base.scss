@@ -1,7 +1,7 @@
 body {
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
-  font-family: var(--main-font);
+  background-color: $main-bg-color;
+  color: $main-text-color;
+  font-family: $main-font;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -15,7 +15,7 @@ body.modal-open {
 }
 .link:hover,
 .link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 /* Забрали маркери в списках */
 .list {
@@ -47,7 +47,7 @@ ol {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: $third-bp) {
     padding-top: 94px;
     padding-bottom: 94px;
   }

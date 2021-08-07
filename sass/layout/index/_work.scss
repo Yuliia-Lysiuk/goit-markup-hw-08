@@ -2,7 +2,7 @@
 .work {
   padding-top: 0;
   display: none;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $third-bp) {
     display: block;
   }
 }
@@ -23,7 +23,7 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 .section-title_theme_dark {
-  color: var(--main-bg-color);
+  color: $main-bg-color;
   width: 100%;
   text-align: center;
   margin: 0;

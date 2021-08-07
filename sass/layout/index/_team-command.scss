@@ -7,7 +7,7 @@
   justify-content: center;
 }
 .command__item {
-  background-color: var(--main-bg-color);
+  background-color: $main-bg-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -16,15 +16,15 @@
   flex-basis: calc(100% / 1 - 30px);
   margin-top: 30px;
   margin-left: 30px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $second-bp) {
     flex-basis: calc(100% / 2 - 30px);
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $third-bp) {
     flex-basis: calc(100% / 4 - 30px);
   }
 }
 .command {
-  background-color: var(--third-bg-color);
+  background-color: $third-bg-color;
 }
 .command__photo {
   margin-bottom: 30px;
@@ -34,7 +34,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
   margin-bottom: 10px;
 }
 .command__position {

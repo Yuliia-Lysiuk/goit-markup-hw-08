@@ -16,15 +16,15 @@
 
   &:hover,
   &:focus {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
 }
 
 .menu-social-networks__icon {
-  fill: var(--social-icon-color);
+  fill: $social-icon-color;
 
   .menu-social-networks__link:hover &,
   .menu-social-networks__link:focus & {
-    fill: var(--main-bg-color);
+    fill: $main-bg-color;
   }
 }

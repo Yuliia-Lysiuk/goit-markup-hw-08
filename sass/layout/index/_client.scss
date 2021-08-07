@@ -1,4 +1,4 @@
-/* Client */
+// /* Client */
 .client {
   display: flex;
   flex-wrap: wrap;
@@ -9,15 +9,15 @@
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 2 - 30px);
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $second-bp) {
     flex-basis: calc(100% / 3 - 30px);
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $third-bp) {
     flex-basis: calc(100% / 6 - 30px);
   }
 }
 .client__link {
-  border: 1px solid var(--social-icon-color);
+  border: 1px solid $social-icon-color;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
@@ -27,19 +27,19 @@
 
   &:hover,
   &:focus {
-    fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
+    fill: $accent-color;
+    border: 1px solid $accent-color;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $third-bp) {
     width: 170px;
   }
 }
 
 .client__icon {
-  fill: var(--social-icon-color);
+  fill: $social-icon-color;
 
   .client__link:hover &,
   .client__link:focus & {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
 }
