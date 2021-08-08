@@ -68,7 +68,7 @@
       url("../images/background-image/header-img-tablet@2x.jpg");
   }
 
-  @media screen and (min-width: $third-bp) {
+  @media screen and (min-width: 1200px) {
     max-width: 1600px;
     background-image: linear-gradient(
         to right,
@@ -78,7 +78,7 @@
       url("../images/background-image/header-img-desktop.jpg");
   }
 
-  @media screen and (min-width: $third-bp) and (min-device-pixel-ratio: 2),
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -102,7 +102,7 @@
   text-transform: uppercase;
   color: $main-bg-color;
   margin-bottom: 30px;
-  @media screen and (min-width: $third-bp) {
+  @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
   }
