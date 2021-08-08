@@ -9,7 +9,7 @@
   }
 }
 .footer-contacts {
-  @media (max-width: $third-bp) {
+  @media (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +19,7 @@
 }
 .footer-contacts,
 .footer__social-conteiner {
-  @media (min-width: $second-bp) and (max-width: 1199px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: calc(100% / 2);
@@ -28,7 +28,7 @@
 .footer-contacts__list,
 .footer__social-conteiner,
 .footer-conect {
-  @media (max-width: $third-bp) {
+  @media (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
